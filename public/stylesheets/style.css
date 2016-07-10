@@ -1,0 +1,12 @@
+@import "reset.css";
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: grey;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+  color: rgb(222, 100, 220);
+}
