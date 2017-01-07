@@ -1,0 +1,340 @@
+@import "reset.css";
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+p{
+  font-size: 1.15rem;
+}
+li{
+  margin-left: 40px;
+  display: list-item;
+  list-style-type: disc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.leftside{
+  width: 500px;
+  margin: 15px;
+}
+.navgroup{
+  margin:15px 20px;
+}
+
+.homepage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 750px;
+  background-color:rgb(220,220,220);
+}
+.navBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: red;
+  width: 100%;
+  height: 60px;
+}
+.link{
+  background-color: inherit;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 28px;
+  padding: 9px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+.link:hover {
+  background: #fa0a0a;
+  background-image: -webkit-linear-gradient(top, #fa0a0a, #8f1414);
+  background-image: -moz-linear-gradient(top, #fa0a0a, #8f1414);
+  background-image: -ms-linear-gradient(top, #fa0a0a, #8f1414);
+  background-image: -o-linear-gradient(top, #fa0a0a, #8f1414);
+  background-image: linear-gradient(to bottom, #fa0a0a, #8f1414);
+  text-decoration: none;
+}
+.link:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
+a {
+  text-decoration: none;
+  color:inherit;
+}
+.mainLogo{
+  width: 400px;
+  height: 400px;
+  margin-top: 75px;
+}
+.tagLine{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+.phoneNumber{
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.link{
+  margin: 0px 15px;
+}
+.aboutPage{
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(220,220,220);
+}
+.upperSection{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5% 15%;
+  height: 800px;
+}
+.pictureHolderUp{
+  display: flex;
+  flex-direction: column;
+  width: 2000px;
+  height: 500px;
+  justify-content: space-around;
+  align-items: center;
+}
+.aboutPictures{
+  width: 200px;
+  height: 200px;
+}
+.aboutHeader{
+  margin-top: 30px;
+  font-size: 3rem;
+}
+.lowerSection{
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: red;
+  background-image: url('http://images.fineartamerica.com/images-medium-large-5/denver-skyline-at-dusk-black-and-white-bw-evening-panorama-broncos-colorado-jon-holiday.jpg');
+}
+.services{
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+#crazyBtn{
+  text-decoration: underline;
+}
+.mainBody{
+  background-color:rgb(220,220,220);
+}
+.toprow{
+  margin-top: 50px;
+}
+
+/**
+ * (optional) define here the style definitions which should be applied on the slider container
+ * e.g. width including further controls like arrows etc.
+ */
+
+ .slider {
+     position: relative;
+     width: 320px;
+     margin: 0 auto 40px;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: -moz-none;
+     -o-user-select: none;
+     user-select: none;
+ }
+
+ .frame,
+ .events_log {
+     position: relative;
+     width: 270px;
+     margin: 0 auto;
+     font-size: 0;
+     line-height: 0;
+     overflow: hidden;
+     white-space: nowrap;
+ }
+
+ .frame li {
+     position: relative;
+     display: inline-block;
+     font-family: 'Source Sans Pro', sans-serif;
+     height: 130px;
+     text-align: center;
+     font-size: 15px;
+     line-height: 30px;
+     background: #2E435A;
+     color: #fff;
+ }
+
+ .slides {
+     display: inline-block;
+ }
+
+ .simple li,
+ .rewind li,
+ .events li {
+     width: 270px;
+     margin-right: 10px;
+ }
+
+ .percentage .slides {
+     display: block;
+ }
+
+ .percentage .frame {
+     width: 87.452%;
+ }
+
+ .percentage li {
+     width: 100%;
+ }
+
+ .variablewidth li {
+     width: 280px;
+     margin-right: 10px;
+
+ }
+
+ .multipleelements li, .multislides li, .ease li {
+     width: 60px;
+     margin-right: 10px;
+ }
+
+ .simple li:last-child,
+ .rewind li:last-child,
+ .events li:last-child,
+ .variablewidth li:last-child,
+ .multipleelements li:last-child,
+ .multislides li:last-child,
+ .ease li:last-child {
+     margin-right: 0;
+ }
+
+ .prev, .next {
+     position: absolute;
+     top: 50%;
+     margin-top: -25px;
+     display: block;
+     cursor: pointer;
+ }
+
+ .next {
+     right: 0;
+ }
+
+ .prev {
+     left: 0;
+ }
+
+ .next svg, .prev svg {
+     width: 25px;
+ }
+
+ .events_log {
+     display: block;
+     font-size: 12px;
+     line-height: 1.6;
+     text-align: center;
+     background-color: #fcfcfc;
+     border: 1px solid #d2d2d2;
+     margin-top: -20px;
+     margin-bottom: 20px;
+ }
+
+ .events_log > span {
+     display: none;
+ }
+
+ .events_log > span:nth-last-child(-n+5) {
+     display: block;
+ }
+
+ @media screen and (min-width: 640px ) {
+     /**
+      * Demo Page Styles
+      */
+     .examplecode, .frame, .events_log {
+         width: 580px;
+     }
+
+     .testscreen {
+         width: 500px;
+     }
+
+     table {
+         width: 580px;
+         margin: 0 auto;
+     }
+
+     tr {
+         padding: 0;
+     }
+
+     /**
+      * Slider specific styles
+      */
+
+     .slider {
+         width: 640px;
+         margin: 0 auto 20px;
+     }
+
+     .simple li,
+     .rewind li,
+     .events li {
+         width: 580px;
+     }
+
+     .variablewidth li {
+         width: 280px;
+         margin-right: 10px;
+     }
+
+     .multipleelements li, .multislides li, .ease li {
+         width: 130px;
+         margin-right: 20px;
+     }
+ }
+
+ @media screen and (min-width: 980px ) {
+     /**
+      * Demo Page Styles
+      */
+
+     .examplecode {
+         width: 880px;
+     }
+
+     /**
+      * Slider specific styles
+      */
+
+     .slider {
+         width: 980px;
+         margin: 0 auto 20px;
+     }
+
+     .frame,
+     .events_log {
+         width: 880px;
+     }
+
+     .simple li,
+     .rewind li,
+     .events li {
+         width: 880px;
+     }
+
+     .variablewidth li {
+         width: 280px;
+         margin-right: 10px;
+     }
+
+     .multipleelements li, .multislides li, .ease li {
+         width: 205px;
+         margin-right: 20px;
+     }
+ }

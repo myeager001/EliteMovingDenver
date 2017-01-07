@@ -10,16 +10,15 @@ var transporter = nodemailer.createTransport('smtps://m.yeager010%40gmail.com:Pi
 /* GET users listing. */
 router.post('/', function(req, res, next) {
   console.log(req.body);
-
   var mailOptions = {
-      from: 'mike', // sender address
-      to: 'm.yeager001@gmail.com', // list of receivers
+      from: 'Services', // sender address
+      to: 'elitemoversdenver@gmail.com', // list of receivers
       subject: 'New Request For Quote ✔', // Subject line
-      html: '<h1>Request for more information</h1><ul><li>Name: ' + req.body.first +' '+ req.body.last +
+      html: '<h1>Request for more information</h1><ul><li>Name: ' + req.body.name +
           '</li><li>email: ' + req.body.email + '</li><li>phone ' + req.body.phone + '</li><li>type: ' + req.body.type +
-          '</li><li>date of move: ' + req.body.date + '</li><li>moving from: ' + req.body.zip1 + ' to ' + req.body.zip2 +
-          '</li><li>Are There stairs: ' + req.body.stairs1 + ', ' + req.body.stairs2 +
-          '</li><li>details: ' + req.body.details
+          '</li><li>date of move: ' + req.body.date + '</li><li>moving from: ' + req.body.zipfrom + ' to ' + req.body.zipto +
+          '</li><li>Are There stairs: to ' + req.body.stairsto + ', from' + req.body.stairsfrom +
+          '</li><li>details: ' + req.body.special
   };
 
   // send mail with defined transport object

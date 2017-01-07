@@ -1,45 +1,224 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-    <title>Jerrys website</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" media="screen" title="no title" charset="utf-8">
-  </head>
-  <body>
-    <main class='homepage'>
-      <div class='navBar'>
-        <div class="leftside">
-          <div class="button-group expanded navgroup">
-            <a class="secondary button large navbtn" href='/about.html'>About</a>
-            <a class="secondary button large navbtn" href='/getQuote.html'>Get A Quote</a>
-            <a class="secondary button large navbtn" href='/contact.html'>Contact Us</a>
-          </div>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Elite Movers Denver</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-red.min.css" />
+    <!-- <link rel="stylesheet" href="JS/material.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                </span>
+            </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link is-active" href="index.html">Home</a>
+                    <a class="mdl-navigation__link" href="blog.html">Reviews</a>
+                    <a class="mdl-navigation__link" href="tips.html">Tips</a>
+                    <a class="mdl-navigation__link" href="contact.html">Get a Quote</a>
+                    <a class="mdl-navigation__link" href="materials.html">Materials</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link is-active" href="index.html">Home</a>
+                <a class="mdl-navigation__link" href="blog.html">Reviews</a>
+                <a class="mdl-navigation__link" href="tips.html">Tips</a>
+                <a class="mdl-navigation__link" href="contact.html">Get a Quote</a>
+                <a class="mdl-navigation__link" href="materials.html">Materials</a>
+            </nav>
         </div>
-      </div>
-      <div class="slider js_percentage percentage">
-         <div class="frame js_frame">
-             <ul class="slides js_slides">
-                 <li class="js_slide"><img class='mainLogo' src='/images/logoLarge.jpg' alt="moving pic" /></li>
-                 <li class="js_slide"><img class='mainLogo' src='/images/moving1.jpg' /></li>
-                 <li class="js_slide"><img class='mainLogo' src='/images/moving2.jpg' /></li>
-                 <li class="js_slide"><img class='mainLogo' src='/images/moving3.jpg' /></li>
-                 <li class="js_slide"><img class='mainLogo' src='/images/moving4.jpg' /></li>
-             </ul>
-         </div>
-         <span class="js_prev prev">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"></path></g></svg>
-         </span>
-         <span class="js_next next">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"></path></g></svg>
-         </span>
-      </div>
-      <!-- <h1 class='tagLine'>Experienced-Safe-Reliable</h1>
-      <h3 class='phoneNumber'>Phone: 123-456-7890</h3> -->
-    </main>
-    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    <script type="text/javascript" src='/javascripts/lory.js'></script>
-    <script type="text/javascript" src='/javascripts/home.js'></script>
-  </body>
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-max-width">
+                <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
+                        <img class="article-image" src=" images/Jerry.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-cell mdl-cell--8-col">
+                        <!-- <h2 class="mdl-card__title-text">Elite Movers Denver</h2> -->
+                        <div class="mdl-card__supporting-text padding-top">
+                            <!-- <div id="tt1" class=" icon material-icons portfolio-share-btn">share</div>
+                            <div class="mdl-tooltip" for="tt1">
+                                Share via social media
+                            </div> -->
+                        </div>
+                        <div class="mdl-card__supporting-text no-left-padding">
+                            <p>There's a better way to move, Elite Movers Denver takes the stress out of moving!!!!! Our highly qualified moving professionals are friendly and happy to help you with all your packing, loading, unloading needs and more! We move a single piece of furniture, a large family, or a business! No matter what your moving needs, Elite Movers Denver has the solution! With our up front pricing and state of the art equipment Elite Movers Denver provides our customers with hassle free quotes. You can count on us to do a great job getting you and your belongings where it needs to go. We are a licensed and insured company that is committed to giving you great service at competitive rates!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/Company.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">What do you enjoy about the work you do?</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      We enjoy helping people get moved. It's a hard job, not everyone can do it. We help new people every day. We understand how much moving help can be appreciated.
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Contact Us</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Phone: 720-404-5584
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Email: elitemoversdenver@gmail.com
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border holder">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent smallbtn" href="https://www.thumbtack.com/"><i class="fa fa-thumb-tack" aria-hidden="true"></i></a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent smallbtn" href="https://www.facebook.com/elitemoversdenver/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent smallbtn" href="https://www.yelp.com/biz/elite-movers-denver-arvada"><i class="fa fa-yelp" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/Moving.jpg" border="0" alt="">
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/Min.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">How does your service stand out?</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Our crew of professional movers are well experienced in packing, prepping furniture, loading/unloading, furniture assembly/disassembly,and just about anything it takes to get you moved.
+                    </div>
+
+                </div>
+                <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+                  <h2 class="mdl-card__title-text">Frequently. Asked. Questions.</h2>
+                  <div class="mdl-card__supporting-text">
+                  <strong>How long has Elite Movers Denver been in business?</strong><br>
+                  We started in 2016.<br><br>
+
+                  <strong>How do I know I’ve chosen a reputable company?</strong><br>
+                  Elite Movers Denver has a 5 star reputation with Thumbtack, Yelp, Google, We are the favored mover by real estate agents throughout the Denver metro area.<br><br>
+
+                  <strong>Is my move insured?</strong><br>
+                  Free FULL COVERAGE ON ALL LOCAL MOVES.  Elite Movers Denver offers full replacement value coverage as part of every local move at no additional charge. This covers you against any loss or damage on items we pack and move. (see terms and conditions)<br><br>
+
+                  <strong>Is there anything you won’t move?</strong><br>
+                  We can’t move anything that is flammable, corrosive or explosive. In other words, we will be happy to move your BBQ grill, but please make separate arrangements for your propane tank. Please empty gas tanks. Please take cleaning fluids yourself or leave them behind. Please dispose of all opened food items before the move.<br><br>
+
+                  <strong>Do the movers take a lunch break?</strong><br>
+                  Yes. Our movers do take lunch breaks during the working day, and you will not be charged for it.<br><br>
+
+                  <strong>Do you move pianos?</strong><br>
+                  Yes. Elite Movers Denver has movers that are specially trained in moving pianos. Our trucks are equipped with the special equipment needed to move pianos. Whether your piano is a standard upright or a Steinway Concert Grand, it is in very good hands with Elite Movers.<br><br>
+
+                  <strong>What time will my movers arrive?</strong><br>
+                  We will arrive on time during the ETA window in your confirmation letter. If you have chosen an afternoon time slot, we will arrive as soon as possible after completing a morning job.<br><br>
+
+                  <strong>Do I have to empty the file cabinets?</strong><br>
+                  Metal vertical file cabinets can remain full, but lateral and wooden files must be emptied. The drawer slides on lateral and wood files are not made to take the weight of the files during moving per the manufacturers.<br><br>
+
+                  <strong>Do I have to empty the freezer or refrigerator?</strong><br>
+                  Yes, the chest freezers can remain full. Refrigerators must be emptied to avoid the contents damaging the inside of your appliance.<br><br>
+
+                  <strong>Will Elite Movers Denver remove the mirror from the dresser?</strong><br>
+                  Yes. Elite Movers will bring along all the necessary tools that are needed to remove and re-install any mirrors attached to your dresser. Items mounted to the wall will require 3rd party services.  These include: hung pictures, mirrors, three dimensional art pieces and shelves.<br><br>
+
+                  <strong>How big are your trucks?</strong><br>
+                  We own and operate our own moving vans.<br><br>
+
+                  <strong>Will Elite Movers Denver take apart my beds?</strong><br>
+                  Yes. Elite Movers will bring all the tools to disassemble and reassemble your beds. If your bed has air or water fill, please empty it before moving day. Some beds do require additional services and costs, such as: log beds, very complicated bunk bed systems and canopy beds. All the bedding should be removed before the movers arrive.<br><br>
+
+                  <strong>Do you provide packing services?</strong><br>
+                  Yes. Our fully trained packing and crating staff is ready to help you with any size project. We also have professional organizers available to help with the pre-packing sorting and organizing.<br><br>
+
+                  <strong>Do you offer storage?</strong><br>
+                  No, at this time we do not offer any storage.<br><br>
+
+                  <strong>What do you consider a large box and what do you consider a small box?</strong><br>
+                  Large boxes are to be carried one at a time. Small boxes can be carried two or more at a time.<br><br>
+
+                  <strong>Can I leave clothing in my dressers?</strong><br>
+                  Yes. Elite Movers will move your dressers with the drawers in them.  In very tight hallway situations, it's better to have the drawers packed.  Also antique, particle board and generally weak furniture should be completely empty.  You can leave cloth items in the drawers. Please remove all jewelry, perfume and non-clothing items.<br><br>
+
+                  <strong>Do you move out of state?</strong><br>
+                  Yes. Elite Movers Denver is happy to accommodate all moves. We are fully licensed and prepared to move you anywhere.<br><br>
+
+                  <strong>How do you protect my house?</strong><br>
+                  Elite Movers carry a number of items to protect your new and existing home from damage. We have floor runners to protect your carpets and floors, doorway protectors for your front door and pads for cabinets and railings. We will also use our moving pads for additional protection as needed.<br><br>
+
+                  <strong>What type of payments do you accept and when?</strong><br>
+                  We accept cash, personal checks, MasterCard, Visa and Discover.</br><br>
+
+                  <strong>Do movers get tips?</strong><br>
+                  Although it’s not required, many of our customers have shown their appreciation by tipping the movers.<br><br>
+
+                  <strong>Do you unhook appliances?</strong><br>
+                  Yes, we are happy  to unhook gas or water lines on appliances. We do recommend that you replace your old water line hoses on your washer when you move. These can be purchased at most hardware stores.<br><br>
+
+                  <strong>Do you unhook electronics?</strong><br>
+                  Due to the complexity of today’s technology, our movers cannot be trained in all the different systems that are available today. Because of this, we ask that all electronics are disconnected before we arrive.<br><br>
+
+                  <strong>Will you dispose of items?</strong><br>
+                  Yes. We have many options to recycle and donate old furniture and moving refuse.<br><br>
+
+                  <strong>How can I move my hanging clothes?</strong><br>
+                  Elite Movers Denver will move all the contents of your closest as long as they as packed, hanging cloths can be transported in moving pads.<br><br>
+
+                  <strong>Will you move a piece of furniture within my home?</strong><br>
+                  Yes. Elite Movers Denver can move items within your home. Please ask about pricing.<br><br>
+
+                  <strong>What happens if an item will not fit in my house?</strong><br>
+                  There are times when an item will not fit at a new home. We will do everything in our power to make the item fit, but we will not disassemble the furniture or your home to make the item fit. If it does not fit, we will place the item wherever you request, or we can take it to storage.<br><br>
+
+                  <strong>On those larger moves, how much do you charge per piece?</strong><br>
+                  We are very proud to say we do not charge per piece! Elite Movers Denver is an Hourly moving service. Our professionals are experienced in all types of commercial/residential relocation. So whether you want us to move a 3 drawer desser or 1000lb safe, we will only charge you for the time it takes to get the job done.
+                  </div>
+                </div>
+
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Elite Movers Denver</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="JS/material.js"></script>
+</body>
+
 </html>
